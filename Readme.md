@@ -14,3 +14,6 @@ Download XLaunch from [SourceForge](https://sourceforge.net/projects/vcxsrv/)
 
 3. Running Image ```docker run -it --rm tanay24/gos```
 
+## Workflow
+
+For now running ```make``` creates a floppy disk image with the correct signatures for the first sector that makes our BIOS start executing instructions. Run ```qemu-system-i386 -fda build/main_floppy.img```
